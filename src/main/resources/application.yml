@@ -1,0 +1,33 @@
+# \u6570\u636E\u5E93\u914D\u7F6E
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/database0?characterEncoding=UTF-8&useUnicode=true&autoReconnect=true&useCursorFetch=true&defaultFetchSize=100&serverTimezone=UTC
+    username: root
+    password: 123456
+#    hikari:
+#      minimum-idle: 2
+#      idle-timeout: 600000
+#      auto-commit: true
+#      pool-name: Hikari Pool
+#      max-lifetime: 1800000
+#      connection-timeout: 10000
+#      connection-test-query: Select 1
+#      maximum-pool-size: 4
+    druid:
+      initial-size: 0
+      min-idle: 0
+      max-active: 1
+      web-stat-filter:
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+      stat-view-servlet:
+        login-username: druid
+        login-password: Amingnb
+      test-on-borrow: true
+
+
+elasticjob:
+  zookeeper:
+    server-list: 172.16.200.109:2181
+    namespace: elestic-job6

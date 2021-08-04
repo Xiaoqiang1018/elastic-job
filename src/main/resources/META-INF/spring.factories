@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.it.xiao.autoconfig.ZookeeperAutoConfiguration,\
+com.it.xiao.autoconfig.SimpleJobAutoConfig
